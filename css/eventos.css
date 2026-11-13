@@ -1,0 +1,35 @@
+
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+h1 {
+    text-align: center;
+    color: #263849;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+section {
+    background-color: #FFFFFF;
+    border: 2px solid #BF8892;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #591931;
+    margin-bottom: 20px;
+}
+
+section p {
+    color: #732E06;
+    line-height: 1.6;
+}
+
+main section:last-child {
+    margin-bottom: 60px;
+}
