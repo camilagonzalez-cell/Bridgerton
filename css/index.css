@@ -38,49 +38,71 @@ main section:last-child {
     margin-bottom: 60px;
 }
 
-.trailer {
-    text-align: center;
-    margin: 70px auto;
-    padding: 40px 20px;
+.multimedia {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    width: 95%;
+    max-width: 1600px;
+    margin: 30px auto 60px;
+    padding: 20px;
 }
 
-.trailer h2 {
-    color: #591931;
-    font-size: 32px;
-    margin-bottom: 20px;
+.multimedia .trailer,
+.multimedia .musica {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    max-width: none;
 }
 
-.trailer p {
-    margin-bottom: 30px;
-}
-
-.trailer iframe {
+.multimedia iframe {
     width: 100%;
-    max-width: 850px;
-    aspect-ratio: 16 / 9;
-    height: auto;
-    border: 3px solid #BF8892;
-    display: block;
-    margin: 0 auto;
-}
-.musica {
-    margin-top: 70px;
-    padding: 30px 20px;
-    text-align: center;
-}
-
-.musica h3 {
-    margin-bottom: 20px;
-}
-
-.musica p {
-    margin-bottom: 30px;
-}
-
-.musica iframe {
-    display: block;
-    max-width: 850px;
-    margin: 0 auto;
     border: 3px solid #BF8892;
     border-radius: 10px;
+    display: block;
+}
+
+.multimedia .trailer iframe {
+    aspect-ratio: 16 / 9;
+    height: auto;
+}
+
+.multimedia .musica iframe {
+    height: 250px;
+}
+
+@media (max-width: 768px) {
+    .multimedia {
+        flex-direction: column;
+    }
+
+    .multimedia .trailer,
+    .multimedia .musica {
+        width: 100%;
+    }
+}
+.multimedia .musica iframe {
+    height: 250px;
+}
+
+.multimedia .musica {
+    padding-top: 80px;
+}
+.multimedia .musica {
+    padding-top: 0;
+    margin-top: 0;
+    
+}
+
+.multimedia .musica h3 {
+    margin-top: 0;
+    position: static;
+    top: 4px;
+}
+.multimedia .trailer h2,
+.multimedia .musica h3 {
+    margin-top: 0;
+    min-height: 40px;
 }
